@@ -13,7 +13,8 @@
 				"ms-vscode.live-server",
 				"ecmel.vscode-html-css",
 				"sidthesloth.html5-boilerplate",
-				"GitHub.copilot-chat"
+				"GitHub.copilot-chat",
+				"GitHub.copilot"
 			]
 		}
 	},
