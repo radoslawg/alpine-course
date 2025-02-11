@@ -1,0 +1,56 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+a {
+    color: #bb86fc;
+}
+
+button {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+}
+
+input, textarea {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+}
+
+header, footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+nav {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+}
+
+.browsehappy {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444444;
+}
