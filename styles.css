@@ -1,56 +1,116 @@
+/* Add modern font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Base styles */
 body {
     background-color: #121212;
     color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    /* added modern font */
 }
 
+/* Typography */
+p {
+    font-size: 1.2em;
+}
+
+/* Links */
 a {
     color: #bb86fc;
 }
 
+a:hover {
+    color: #ff9800;
+}
+
+/* Buttons */
 button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    /* changed from #1e88e5 */
+    color: #ffffff;
+    border: 1px solid #e65100;
+    /* changed from #1565c0 */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65100;
+    /* changed from #1565c0 */
+}
+
+/* Form Elements */
+input,
+textarea,
+select {
     background-color: #333333;
     color: #e0e0e0;
     border: 1px solid #444444;
+    padding: 10px;
 }
 
-input, textarea {
-    background-color: #333333;
-    color: #e0e0e0;
-    border: 1px solid #444444;
+input:focus,
+textarea:focus {
+    border-color: #ff9800;
+    /* changed from #1e88e5 */
+    outline: none;
 }
 
-header, footer {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
+.form-field input[type="checkbox"] {
+    margin-top: 0;
+    margin-right: 10px;
 }
 
+/* Form Layout */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+/* Layout Components */
+header,
+footer,
 nav {
     background-color: #1f1f1f;
     color: #e0e0e0;
 }
 
+header,
+footer {
+    border-bottom: 2px solid #ff9800;
+    /* changed from #1e88e5 */
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Card Component */
 .card {
     background-color: #1e1e1e;
     color: #e0e0e0;
-    border: 1px solid #444444;
+    border: 1px solid #ff9800;
+    /* changed from #1e88e5 */
 }
 
+/* Notification/Alert */
 .browsehappy {
     background-color: #ffcc00;
     color: #000000;
     padding: 10px;
     text-align: center;
-}
-
-p {
-    font-size: 1.2em;
-}
-
-button {
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #444444;
 }
