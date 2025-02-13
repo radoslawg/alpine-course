@@ -14,7 +14,8 @@
 				"ecmel.vscode-html-css",
 				"sidthesloth.html5-boilerplate",
 				"GitHub.copilot-chat",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"mohd-akram.vscode-html-format"
 			]
 		}
 	},
