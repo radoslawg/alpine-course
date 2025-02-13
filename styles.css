@@ -1,12 +1,11 @@
-/* Add modern font import */
+/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/* Base styles */
+/* Base Styles */
 body {
     background-color: #121212;
     color: #e0e0e0;
     font-family: 'Roboto', sans-serif;
-    /* added modern font */
 }
 
 /* Typography */
@@ -25,18 +24,15 @@ a:hover {
 
 /* Buttons */
 button {
-    padding: 10px 20px;
     background-color: #ff9800;
-    /* changed from #1e88e5 */
-    color: #ffffff;
     border: 1px solid #e65100;
-    /* changed from #1565c0 */
+    color: #ffffff;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 button:hover {
     background-color: #e65100;
-    /* changed from #1565c0 */
 }
 
 /* Form Elements */
@@ -44,41 +40,49 @@ input,
 textarea,
 select {
     background-color: #333333;
-    color: #e0e0e0;
     border: 1px solid #444444;
+    color: #e0e0e0;
+    display: block;
     padding: 10px;
+    width: 100%;
 }
 
 input:focus,
 textarea:focus {
     border-color: #ff9800;
-    /* changed from #1e88e5 */
     outline: none;
 }
 
 .form-field input[type="checkbox"] {
-    margin-top: 0;
     margin-right: 10px;
+    margin-top: 0;
 }
 
 /* Form Layout */
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
     background-color: #1e1e1e;
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    max-width: 560px;
+    padding: 20px;
+    width: 100%;
 }
 
 .form-field {
     margin-bottom: 15px;
 }
 
-.form-field label {
-    display: flex;
-    flex-direction: column;
-    font-size: 1em;
+.form-field p.hint {
+    color: #777;
+    font-size: 0.8em;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.form-field p.warning {
+    clear: both;
+    color: #fe3131;
+    margin-top: 5px;
 }
 
 /* Layout Components */
@@ -92,7 +96,6 @@ nav {
 header,
 footer {
     border-bottom: 2px solid #ff9800;
-    /* changed from #1e88e5 */
 }
 
 nav a:hover {
@@ -102,9 +105,8 @@ nav a:hover {
 /* Card Component */
 .card {
     background-color: #1e1e1e;
-    color: #e0e0e0;
     border: 1px solid #ff9800;
-    /* changed from #1e88e5 */
+    color: #e0e0e0;
 }
 
 /* Notification/Alert */
