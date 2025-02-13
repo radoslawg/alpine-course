@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="lesson3.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <form x-data="signupForm" action="">
+        <h1>Signup form</h1>
+        <div class="form-field">
+            <p class="hint" x-bind:class="{'warning': username.length > 12}">
+                <span x-text="username.length + ' / 15'"></span> characters used
+            </p>
+            <label for="">
+                <span>Username:</span>
+                <input type="text" maxlength="15" x-model="username" />
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="">
+                <span>Email:</span>
+                <input type="email" x-model="email" />
+                <span x-text="email"></span>
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="">
+                <span>Password:</span>
+                <input type="password" x-model="password" />
+                <span x-text="password"></span>
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="">
+                <span>Confirm password:</span>
+                <input type="password" x-model="passwordConfirm" />
+                <span x-text="passwordConfirm"></span>
+            </label>
+        </div>
+        <div class="form-field">
+            <label for="">Belt color:
+                <select name="" id="" x-model="belt">
+                    <option value="">Select a belt</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="brown">Brown</option>
+                </select>
+                <span x-text="belt"></span>
+            </label>
+        </div>
+        <div class="form-field">
+            <p class="hint" :class="{'warning': bio.length > 90}">
+                <span x-text="bio.length + ' / 100'"></span> characters used
+            </p>
+            <label for="">
+                <span>Short bio:</span>
+                <textarea maxlength="100" x-model="bio"></textarea>
+                <span x-text="bio"></span>
+            </label>
+        </div>
+        <div class="form-field newsletter">
+            <label for=""></label>
+            <input type="checkbox" x-model="newsletter" />
+            <span>Sign up for the newsletter</span>
+            <div x-text="newsletter"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
