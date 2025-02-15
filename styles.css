@@ -85,6 +85,27 @@ form {
     margin-top: 5px;
 }
 
+.form-field.password {
+    position: relative;
+}
+
+.form-field.password input {
+    padding-right: 80px;
+    /* space for the button */
+}
+
+.form-field.password button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff9800;
+    border: 1px solid #e65100;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
 /* Layout Components */
 header,
 footer,
