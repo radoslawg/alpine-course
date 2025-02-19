@@ -106,6 +106,13 @@ form {
     padding: 5px 10px;
 }
 
+/* Error Messages */
+.error {
+    color: #fe3131;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
 /* Layout Components */
 header,
 footer,
