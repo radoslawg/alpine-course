@@ -175,6 +175,19 @@ nav a:hover {
     text-align: center;
 }
 
+.modal {
+    transition: all ease-in 300ms;
+    transition-delay: 300ms;
+}
+
+.modal.on-screen {
+    transform: translateY(0);
+}
+
+.modal.off-screen {
+    transform: translateY(-100vh);
+}
+
 [x-cloak] {
     display: none !important;
 }
